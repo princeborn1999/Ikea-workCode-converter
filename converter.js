@@ -59,6 +59,6 @@ function converter() {
     endMin = endMin == 0 ? "00" : "30";
     return { endHour, endMin };
   }
-  const result = `On duty = ${startHour}:${startMin}, off duty = ${endTime.endHour}:${endTime.endMin}, rest time = ${restTime} min`;
+  const result = `On duty = ${startHour}:${startMin}, off duty = ${endTime.endHour}:${endTime.endMin}, rest time = ${restTime} min(s)`;
   document.getElementById("result").innerText = result;
 }

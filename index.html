@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ikea-workCode-Converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>IKEA WorkCode Converter</h1>
-    <label for="workCode">Class Code:</label>
-    <input type="text" id="workCode">
-    <button onclick="converter()">Convert</button>
-    <p id="result"></p>
+    <div class="container">
+        <div>
+            <h1>IKEA WorkCode Converter</h1>
+            <label for="workCode">Class Code:</label>
+            <input type="text" id="workCode">
+            <button onclick="converter()">Convert</button>
+            <p id="result"></p>
+        </div>
+    </div>
     <script src="converter.js"></script>
 </body>
 </html>
