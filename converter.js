@@ -1,5 +1,5 @@
-const code = "18DH";
-function codeToTime(code) {
+function converter() {
+  const code = document.getElementById("workCode").value;
   const restTime = getRestTime(code[code.length - 1]);
   const startHour = getStartHour(String(code[0]) + String(code[1]));
   const startMin = getStartMin(code[1]);
@@ -59,8 +59,6 @@ function codeToTime(code) {
     endMin = endMin == 0 ? "00" : "30";
     return { endHour, endMin };
   }
-  console.log(
-    `start time = ${startHour}:${startMin}, end time = ${endTime.endHour}:${endTime.endMin} ,rest time = ${restTime} min`
-  );
+  const result = `On duty = ${startHour}:${startMin}, off duty = ${endTime.endHour}:${endTime.endMin}, rest time = ${restTime} min`;
+  document.getElementById("result").innerText = result;
 }
-codeToTime(code);
